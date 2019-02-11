@@ -16,7 +16,7 @@ export class RadioComponent implements OnInit {
   constructor() {}
 
   stations: Station[];
-  stationSelected: string = undefined;
+  stationSelected: Station;
 
   ngOnInit() {
     this.mountListStations();
