@@ -1,4 +1,4 @@
-# SubscriptionPortal
+# Radio Widget
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
@@ -30,7 +30,7 @@ To install the CLI using npm, open a terminal/console window and enter the follo
 
 npm install -g @angular/cli
 
-Step 2: Serve the application
+Step 2: Serve the applicatio
 
 npm install
 
