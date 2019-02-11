@@ -32,6 +32,8 @@ npm install -g @angular/cli
 
 Step 2: Serve the application
 
+npm install
+
 ng serve
 
 ## Development server
