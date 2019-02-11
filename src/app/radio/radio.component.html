@@ -1,0 +1,48 @@
+<div id="container" class="radio-widget-card">
+  <div id="box-1" class="box" id="radio-widget-header">
+    <span class="icons-default-header" id="icon-back-arrow">
+      <img src="../../assets/img/back-arrow.png" width="15" />
+    </span>
+    <span id="header-text"><strong>STATIONS</strong></span>
+    <span id="icon-power" id="icon-switch">
+      <img src="../../assets/img/switch.png" width="25" />
+    </span>
+  </div>
+  <div id="radio-widget-middle" class="box">
+    <div
+      *ngFor="let station of stations"
+      (click)="selectStation(station); $event.stopPropagation()"
+    >
+      <div class="radio-widget-middle-list">
+        <span class="list-title">{{ station.title }}</span>
+        <span matListItemLeft class="list-station">{{ station.station }}</span>
+        <hr class="divider" />
+      </div>
+      <div *ngIf="station.isOpen" class="radio-widget-middle-list">
+        <img
+          id="icon-minus"
+          src="../../assets/img/minus.png"
+          width="35"
+          (click)="turnDown(); $event.stopPropagation()"
+        />
+        <img id="icon-center" src="../../assets/img/radio.png" width="120" />
+        <img
+          id="icon-plus"
+          src="../../assets/img/plus.png"
+          width="35"
+          (click)="turnUp(); $event.stopPropagation()"
+        />
+      </div>
+    </div>
+  </div>
+  <div id="radio-widget-footer" class="radio-widget-card">
+    <span *ngIf="stationSelected && stationSelected.isOpen" id="span-footer-1"
+      >CURRENTLY PLAYING</span
+    ><br />
+    <span
+      *ngIf="stationSelected && stationSelected.isOpen"
+      id="span-footer-2"
+      >{{ stationSelected.title }}</span
+    >
+  </div>
+</div>

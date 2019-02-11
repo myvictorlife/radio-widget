@@ -1,0 +1,108 @@
+.radio-widget-card {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  position: relative;
+  padding: 16px;
+  max-width: 370px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+// HEADER
+#radio-widget-header {
+  background-color: #ffb74d;
+  text-align: center;
+  padding: 31px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#header-text {
+  font-size: 25px;
+  color: white;
+}
+#icon-switch {
+  float: right;
+}
+// END HEADER
+
+// MIDDLE
+#radio-widget-middle {
+  background-color: #424242;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.icons-default-header {
+  font-size: 28px;
+  color: white;
+}
+#icon-back-arrow {
+  float: left;
+}
+
+.radio-widget-middle-list {
+  color: #bdbdbd;
+  font-size: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 16px;
+}
+
+.divider {
+  border-width: 1px;
+  border-style: solid;
+  color: #bdbdbd;
+}
+
+.list-title {
+  margin-left: 0%;
+  cursor: pointer;
+}
+.list-station {
+  float: right;
+  cursor: pointer;
+}
+
+.mat-list,
+.mat-list-base {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#icon-plus {
+  float: right;
+  margin-top: 13%;
+  cursor: pointer;
+}
+
+#icon-center {
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+#icon-minus {
+  margin-bottom: 12%;
+  cursor: pointer;
+}
+// END MIDDLE
+
+// FOOTER
+#radio-widget-footer {
+  background-color: #383838;
+  text-align: center;
+  padding: 31px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 0px;
+}
+#span-footer-1 {
+  color: #ffa726;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+#span-footer-2 {
+  color: white;
+  font-size: 20px;
+}
+// END FOOTER
